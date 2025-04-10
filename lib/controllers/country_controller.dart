@@ -11,7 +11,7 @@ class CountryController extends GetxController {
   @override
   void onInit() {
     fetchCountries();
-    super.onInit();
+
   }
 
   void fetchCountries() async {
