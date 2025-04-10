@@ -9,7 +9,11 @@ class CountryScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text("Countries List")),
+      appBar: AppBar(
+        title: const Text('🌍 Countries of the World', ),
+        backgroundColor: Colors.teal,
+        foregroundColor: Colors.white,
+      ),
       body: Obx(() {
         if (controller.isLoading.value) {
           return Center(child: CircularProgressIndicator());
